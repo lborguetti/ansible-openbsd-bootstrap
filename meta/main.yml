@@ -1,0 +1,19 @@
+galaxy_info:
+  author: Luciano Antonio Borguetti Faustino
+  description: https://github.com/lborguetti
+
+  issue_tracker_url: https://github.com/lborguetti/ansible-openbsd-bootstrap/issues
+
+  license: ISC
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: OpenBSD
+    versions:
+    - 6.6
+
+  galaxy_tags:
+    - OpenBSD
+    - bootstrap
+    - python

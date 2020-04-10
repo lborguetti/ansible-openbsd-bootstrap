@@ -1,0 +1,11 @@
+---
+- name: Check if bootstrap is needed
+  raw: test -f "{{ python_interpreter }}"
+  register: need_bootstrap
+  ignore_errors: true
+  changed_when: need_bootstrap is failed
+  check_mode: false
+
+- name: Install python
+  raw: pkg_add -z "{{ python_version }}"
+  when: need_bootstrap is failed
